@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // Backend API Base URL
-const api = axios.create({ baseURL: 'http://localhost:8088/api/products' });
+//http://localhost:8088
+const api = axios.create({ baseURL: 'http://my-springboot-app.azurewebsites.net/api/products' });
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -33,6 +34,7 @@ export default function ProductList() {
 
   return (
     <div style={{ padding: '2rem' }}>
+      <h3>v1</h3>
       <h2>Create Product</h2>
       <input
         type="text"
