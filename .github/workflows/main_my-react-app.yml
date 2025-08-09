@@ -62,4 +62,8 @@ jobs:
           app-name: 'my-react-app'
           slot-name: 'Production'
           package: .
+          action: "upload"
+          app_location: "/"
+          output_location: "build"
+
           
